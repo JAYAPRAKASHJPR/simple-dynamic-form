@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<form [formGroup]='myGroup'>
+  <label for = "name" > Name: </label>
+  <input type="text" name="name" id="name" formControlName = 'Name'> <br>
+  <label for = "name" > Age: </label>
+  <input type="text" name="age" id="age" formControlName = 'Age'>
+  <br>
+  <button (click) = "onSubmit()"> Submit </button>
+
+</form>
